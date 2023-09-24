@@ -4,14 +4,21 @@ class Message extends Component {
     constructor(){
         super()
         this.state = {
-            Message: 'Welcome to',
-            Name: 'Femi'
+            Message: 'Welcome Visitor'
         }
     }
+
+    changeMessage(){
+        this.setState({
+            Message: 'Thank you for subscribing'
+        })
+    }
+
     render() {
         return(
             <div>
-                <h1>{this.state.Message} {this.state.Name}</h1>
+                <h1>{this.state.Message}</h1>
+                <button onClick={() => this.changeMessage()}>Subscribe</button>
             </div>
         ) 
     }
