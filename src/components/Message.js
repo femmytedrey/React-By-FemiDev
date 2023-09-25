@@ -14,6 +14,20 @@ class Message extends Component {
         })
     }
 
+    // changeMessage(){
+    //     const newMessage =
+    //   this.state.Message === 'Welcome Visitor'
+    //     ? 'Thank you for subscribing'
+    //     : 'Welcome Visitor';
+
+    //     this.setState({
+    //     Message: newMessage,
+    //     });
+    // }
+    
+
+    
+
     render() {
         return(
             <div>
