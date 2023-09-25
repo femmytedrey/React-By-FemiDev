@@ -8,13 +8,15 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './ClassClick';
+import EventBind from './components/EventBind';
 
 class App extends Component{
   render() {
     return (
       <div className = "App">
-        <FunctionClick />
-        <ClassClick />
+        <EventBind />
+        {/* <FunctionClick /> */}
+        {/* <ClassClick /> */}
         {/* <Counter /> */}
         {/* <Greet name = "Femi" heroName = "Femi_Dev">
           <h3>This is a children props</h3>
