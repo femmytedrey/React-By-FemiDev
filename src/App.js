@@ -6,11 +6,15 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './ClassClick';
 
 class App extends Component{
   render() {
     return (
       <div className = "App">
+        <FunctionClick />
+        <ClassClick />
         {/* <Counter /> */}
         {/* <Greet name = "Femi" heroName = "Femi_Dev">
           <h3>This is a children props</h3>
@@ -18,10 +22,10 @@ class App extends Component{
         {/* <Greet name = "Bruce" heroName = "Franklin">
           <button>Action</button>
         </Greet> */}
-        <Greet name = "John" heroName = "Superman"/>
+        {/* <Greet name = "John" heroName = "Superman"/> */}
         {/* <Welcome name = "Femi" heroName = "Franklin"></Welcome> */}
         {/* <Welcome name = "Bruce" heroName = "Femi_Dev"></Welcome> */}
-        <Welcome name = "John" heroName = "Superman"></Welcome>
+        {/* <Welcome name = "John" heroName = "Superman"></Welcome> */}
         {/* <Hello /> */}
         {/* <Message></Message> */}
       </div>
