@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Person(prop) {
+function Person({person}) {
   return (
     <div>
-        <h2>I am {prop.person.name}. I am {prop.person.age}. I know {prop.person.skill}.</h2>
+      <h2>I am {person.name}. I am kg{person.age}. I know {person.skill}.</h2>
     </div>
   )
 }
