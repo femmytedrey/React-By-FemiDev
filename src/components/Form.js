@@ -29,6 +29,10 @@ class Form extends Component {
                 <label id = "username">Username</label>
                 <input type = "text" id = "username" name = "username" value = {this.state.username} onChange={this.handleUsernameChange}/>
             </div>
+            <div>
+                <label>Password</label>
+                <input type = "password" />
+            </div>
 
             <div>
                 <label id = 'comment'>Comment</label>
