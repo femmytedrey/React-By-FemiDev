@@ -17,12 +17,14 @@ import StyleSheet from './components/StyleSheet';
 import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 
 class App extends Component{
   render() {
     return (
       <div className = "App">
-        <Form />
+        <LifeCycleA /> 
+        {/* <Form /> */}
         {/* <h1 className = 'error'>Error</h1>
         <h1 className = {styles.success}>Success</h1> */}
         {/* <StyleSheet primary = {true}></StyleSheet> */}
