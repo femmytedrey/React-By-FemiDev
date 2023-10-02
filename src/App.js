@@ -35,6 +35,8 @@ import Clickcountertwo from './components/Clickcountertwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import Counters from './components/Counters';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 class App extends Component{
   constructor(props) {
@@ -45,17 +47,20 @@ class App extends Component{
   render() {
     return (
       <div className = "App">
-        <Counters>
+        <UserProvider value = "FemiDevGuru">
+          <ComponentC />
+        </UserProvider>
+        {/* <Counters>
           {(count, incrementCount) => (
             <Clickcountertwo count ={count} incrementCount ={incrementCount}/>
           )}
-        </Counters>
+        </Counters> */}
 
-        <Counters>
+        {/* <Counters>
           {(count, incrementCount) => (
             <HoverCounterTwo count ={count} incrementCount ={incrementCount}/>
           )}
-        </Counters>
+        </Counters> */}
 
         {/* <Clickcountertwo />
         <HoverCounterTwo />
