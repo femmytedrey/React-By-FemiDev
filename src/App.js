@@ -31,6 +31,10 @@ import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import UpdatedCounter from './components/withCounter';
+import Clickcountertwo from './components/Clickcountertwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import Counters from './components/Counters';
 
 class App extends Component{
   constructor(props) {
@@ -41,8 +45,23 @@ class App extends Component{
   render() {
     return (
       <div className = "App">
-        <ClickCounter name = "Femi-Dev"/>
-        <HoverCounter />
+        <Counters>
+          {(count, incrementCount) => (
+            <Clickcountertwo count ={count} incrementCount ={incrementCount}/>
+          )}
+        </Counters>
+
+        <Counters>
+          {(count, incrementCount) => (
+            <HoverCounterTwo count ={count} incrementCount ={incrementCount}/>
+          )}
+        </Counters>
+
+        {/* <Clickcountertwo />
+        <HoverCounterTwo />
+        <User render = {(isLoggedIn) => isLoggedIn ? 'FemiDevGuru' : 'Guest'} /> */}
+        {/* <ClickCounter name = "Femi-Dev"/> */}
+        {/* <HoverCounter /> */}
         {/* <ErrorBoundary>
           <Hero heroName="Bat-Man"/>
         </ErrorBoundary> */}
